@@ -1,34 +1,40 @@
 package gameLogic;
 
 
-public class AntLion extends Item { // ready
+public class AntLion extends Item {
 
 	AntLion(Field field) {
 		super(field);
+		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public void act() {
-		// nothing happens here
+		// TODO Auto-generated method stub
+		
 	}
 
 	@Override
 	public void antInteract(Ant ant) {
+		System.out.println("\tantlion - antInteract(ant)");
 		ant.eaten();
 	}
 
 	@Override
 	public void antEaterInteract(AntEater antEater) {
-		// nothing happens here
+		System.out.println("\ti - antEaterInteract(hs)");
+		
 	}
 
 	@Override
 	public void killerSprayInteract() {
-		// nothing happens here
+		// TODO Auto-generated method stub
+		
 	}
 
 	@Override
-	public void stoneInteract(Stone stone) {
-		// nothing happens here
+	public void stoneInteract() {
+		// TODO Auto-generated method stub
+		
 	}
 }
